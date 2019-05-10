@@ -1,0 +1,22 @@
+{
+  "name": "testingTests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "testme.js",
+  "scripts": {
+    "test-jasmine": "jasmine",
+    "test-mocha": "mocha",
+    "say-hello": "echo 'Hello World'",
+    "test": "jasmine && mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  },
+  "devDependencies": {
+    "jasmine": "^3.4.0"
+  }
+}
