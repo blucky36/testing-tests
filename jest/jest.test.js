@@ -9,17 +9,27 @@ beforeEach(
 
 describe('Doggo class', () => {
 
-  function newErrorInstance(bool) {
+  const newErrorInstance = (bool) => {
     bool ? new dog() : new dog('string',{object:"AHHHHH"},'string','string')
   }
 
-  // it('throws error if missing parameter', () => {
-  //   expect(newErrorInstance(true)).toThrowError('missing values')
-  // })
-  // //Working out testing errors
-  // it('throws error if parameter is incorrect type', () => {
-  //   expect(newErrorInstance(false)).toThrowError('incorrect input type')
-  // })
+  it('throws error if missing parameter', () => {
+    try {
+      newErrorInstance(true)
+      expect(true).toBe(false)
+    } catch(err) {
+      expect(err.message).toBe('missing values')
+    }
+  })
+
+  it('throws error if parameter is incorrect type', () => {
+    try {
+      newErrorInstance(false)
+      expect(true).toBe(false)
+    } catch(err) {
+      expect(err.message).toBe('incorrect input type')
+    }
+  })
 
   describe('getName', () => {
     it('gets dog name', () => {
