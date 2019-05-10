@@ -1,6 +1,5 @@
 # Testing test frameworks
 
-=========================
 
 ## Included frameworks
 
@@ -12,8 +11,6 @@
 1. Install node.js and npm
 2. Fork/Clone this repository
 3. run npm install to init dependencies
-
-=========================
 
 run 
   ```bash
@@ -32,5 +29,13 @@ run
     npm run test-mocha
   ```
 to run only mocha/chai tests
+
+run 
+  ```bash
+    npm run test-jest
+  ```
+to run only jest tests
+
+[https://jestjs.io/docs/en/getting-started#using-babel](jest docs for running with typescript)
 
 

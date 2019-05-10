@@ -1,13 +1,15 @@
 {
   "name": "testingTests",
   "version": "1.0.0",
-  "description": "",
+  "description": "testing test frameworks",
   "main": "testme.js",
   "scripts": {
+    "test-jest-single": "jest jest/jest.test.js",
+    "test-jest": "jest",
     "test-jasmine": "jasmine",
     "test-mocha": "mocha",
     "say-hello": "echo 'Hello World'",
-    "test": "jasmine && mocha"
+    "test": "jasmine && mocha && echo 'jest and mocha run the same tests' && jest"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +19,7 @@
     "mocha": "^6.1.4"
   },
   "devDependencies": {
-    "jasmine": "^3.4.0"
+    "jasmine": "^3.4.0",
+    "jest": "^24.8.0"
   }
 }
