@@ -36,6 +36,12 @@ run
   ```
 to run only jest tests
 
-[https://jestjs.io/docs/en/getting-started#using-babel](jest docs for running with typescript)
+run 
+  ```bash
+    npm run test-jest-single
+  ```
+to view single test results with jest
+
+(https://jestjs.io/docs/en/getting-started#using-babel)[jest docs for running with typescript]
 
 
