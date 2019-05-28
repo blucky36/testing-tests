@@ -5,6 +5,7 @@
 
 1. Jasmine
 2. Mocha (test runner) / Chai (assertion library)
+3. Jest
 
 ### prerequisites
 
